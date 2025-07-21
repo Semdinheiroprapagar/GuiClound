@@ -1,0 +1,9 @@
+Tamanhos das imagens google play
+
+Icone 512 x 512
+Recurso gráfico 1024 x 500
+Captura de celular/ Tablet 16/9
+Fazer vídeo e postar no youtube
+Observe que atualmente não podemos verificar a implementação do suporte Linux/SteamOS do seu aplicativo devido ao nosso status de trabalho em casa. Certifique-se de testar completamente o aplicativo por meio do Steam em uma máquina Linux nova, para garantir que todas as dependências foram atendidas e que o aplicativo funciona conforme o esperado.
+
+

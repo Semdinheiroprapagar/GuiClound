@@ -23,16 +23,32 @@ body, html {
 .menu {
   display: none;
 }
+.liquid-glass-btn {
+  display: inline-block;
+  padding: 18px 24px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border: 1.5px solid rgba(255,255,255,0.28);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.liquid-glass-btn:hover {
+  box-shadow: 0 12px 40px 0 rgba(31,38,135,0.45);
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.28);
+}
+.liquid-glass-btn img {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.18));
+}
 </style>
 </head>
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-    <div class="w3-center w3-black">
-        <a href="#" class="w3-button w3-block w3-black"><img src="/GuiSB.png" style="width:10%; "></a>
-        
-    </div>
+    
   <div class="w3-row  w3-black">
     <div class="w3-col s3">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
@@ -51,6 +67,12 @@ body, html {
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <!-- Suba sua imagem steam.png na raiz do projeto -->
+    <a href="https://store.steampowered.com/developer/guiclound" target="_blank" class="liquid-glass-btn">
+      <img src="/images (2).png" alt="Steam" style="width:56px; height:56px;" />
+    </a>
+  </div>
   <div class="w3-display-bottomleft w3-center w3-padding-large ">
     <span class="w3-tag">GuiClound</span>
   </div>
