@@ -23,24 +23,40 @@ body, html {
 .menu {
   display: none;
 }
+
 .liquid-glass-btn {
   display: inline-block;
   padding: 18px 24px;
   border-radius: 24px;
-  background: rgba(255,255,255,0.18);
-  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
-  backdrop-filter: blur(8px) saturate(180%);
-  -webkit-backdrop-filter: blur(8px) saturate(180%);
-  border: 1.5px solid rgba(255,255,255,0.28);
-  transition: box-shadow 0.2s, transform 0.2s;
+  background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(200,200,255,0.18) 100%);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37), 0 1.5px 8px 0 rgba(255,255,255,0.18) inset;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-top: 2.5px solid rgba(255,255,255,0.55);
+  border-bottom: 2.5px solid rgba(180,200,255,0.18);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.liquid-glass-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 24px;
+  background: linear-gradient(120deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.05) 80%);
+  opacity: 0.7;
+  pointer-events: none;
 }
 .liquid-glass-btn:hover {
-  box-shadow: 0 12px 40px 0 rgba(31,38,135,0.45);
+  box-shadow: 0 12px 40px 0 rgba(31,38,135,0.45), 0 2px 16px 0 rgba(255,255,255,0.22) inset;
   transform: scale(1.08);
-  background: rgba(255,255,255,0.28);
+  background: linear-gradient(135deg, rgba(255,255,255,0.32) 0%, rgba(200,200,255,0.22) 100%);
 }
 .liquid-glass-btn img {
   filter: drop-shadow(0 2px 8px rgba(0,0,0,0.18));
+  z-index: 1;
+  position: relative;
 }
 </style>
 </head>
@@ -48,7 +64,10 @@ body, html {
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-    
+    <div class="w3-center w3-black">
+        <a href="#" class="w3-button w3-block w3-black"><img src="/GuiSB.png" style="width:10%; "></a>
+        
+    </div>
   <div class="w3-row  w3-black">
     <div class="w3-col s3">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
@@ -69,8 +88,8 @@ body, html {
 <header class="bgimg w3-display-container" id="home">
   <div class="w3-display-middle w3-center">
     <!-- Suba sua imagem steam.png na raiz do projeto -->
-    <a href="https://store.steampowered.com/developer/guiclound" target="_blank" class="liquid-glass-btn">
-      <img src="/images (2).png" alt="Steam" style="width:56px; height:56px;" />
+    <a href="https://store.steampowered.com/app/3323860/Jelly_Farm/" target="_blank" class="liquid-glass-btn">
+      <img src="/steam.png" alt="Steam" style="width:56px; height:56px;" />
     </a>
   </div>
   <div class="w3-display-bottomleft w3-center w3-padding-large ">
